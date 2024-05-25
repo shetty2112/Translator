@@ -86,9 +86,8 @@ export const roomsRouter = createTRPCRouter({
         },
       },
     });
-    await roomClient.createRoom({
-      name: room.name,
-    });
+
+    
 
     const grant: VideoGrant = {
       room: room.name,
